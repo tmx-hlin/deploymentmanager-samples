@@ -5,18 +5,18 @@ resources:
   # The "name" property below will be the ID of the new project
   # If you want your project to have a different name, use the "project-name"
   # property.
-  - name: DM_TEST_PROJECT
+  - name: Cohesity
     type: project.py
     properties:
         # Change this to your organization ID.
-        organization-id: "ORG_ID"
+        organization-id: "438937180560"
         # You can also create the project in a folder.
         # If both organization-id and parent-folder-id are provided,
         # the project will be created in parent-folder-id.
-        #parent-folder-id: "FOLDER_ID"
+        parent-folder-id: "314269898057"
 
         # Change the following to your organization's billing account
-        billing-account-name: billingAccounts/BILLING_ACCOUNT_ID
+        billing-account-name: billingAccounts/01FA5D-B7C3F7-352A34
 
         # The apis to enable in the new project.
         # To see the possible APIs, use: gcloud services list --available
@@ -56,7 +56,7 @@ resources:
                 members:
                   # NOTE: The DM service account that is creating this project will
                   # automatically be added as an owner.
-                  - serviceAccount:98765432100@cloudservices.gserviceaccount.com
+                  - serviceAccount:347379520714-compute@developer.gserviceaccount.com
               - role: roles/viewer
                 members:
                   - user:iamtester@deployment-manager.net
@@ -68,4 +68,4 @@ resources:
                 members:
                   # This is already not on the project, but in case it shows up, let's
                   # remove it.
-                  - serviceAccount:1234567890@cloudservices.gserviceaccount.com
+                  - serviceAccount:347379520714-compute@developer.gserviceaccount.com	
